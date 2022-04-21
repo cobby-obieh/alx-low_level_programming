@@ -1,2 +1,1 @@
-My Singly linked lists of codes:x
-:
+My Singly linked lists of codes
