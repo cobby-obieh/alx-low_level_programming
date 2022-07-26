@@ -1,21 +1,18 @@
-/*
- * File: File: 4-isalpha.c
- * Auth: Nicholas M Mwanza
- */
-#include "holberton.h"
-
+#include "main.h"
 /**
- * _isalpha - Checks for alphabetic character
- * @c: The character to be checked
+ * _isalpha - main function
  *
- * Return: 1 for alphabetic character or 0 for anything else
+ * @c: character to compare
+ *
+ * Return: 1 if true, 0 if false
+ *
  */
+
 int _isalpha(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
 		return (1);
 	}
-
 	return (0);
 }

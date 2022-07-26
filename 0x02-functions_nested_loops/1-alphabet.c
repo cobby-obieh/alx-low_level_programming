@@ -1,22 +1,18 @@
-/*
- * File: 1-alphabet.c
- * Auth: Nicholas M Mwanza
- */
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_alphabet - Make the alphabet
+ * print_alphabet - prints alphabet
  *
- * Return: void
+ * Return: always 0;
+ *
  */
 void print_alphabet(void)
 {
-	char c;
+	char i;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		_putchar(c);
+		_putchar(i);
 	}
-
 	_putchar('\n');
 }

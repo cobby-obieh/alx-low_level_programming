@@ -1,24 +1,20 @@
-#include<stdio.h>
 #include "main.h"
+
 /**
- *_strcpy - update value.
- *@dest: value to be evaluate.
- *@src: value to be evaluate.
- *Return: not.
+ * _strcpy - print reverse characters.
+ * @dest: Array
+ * @src: - Number of array
+ * Return: Always 0.
  */
 char *_strcpy(char *dest, char *src)
 {
-	int l = 0;
-	int x = 0;
+	int i;
 
-	while (*(src + l) != '\0')
+	for (i = 0; src[i]; i++)
 	{
-		l++;
+		dest[i] = src[i];
 	}
-	for ( ; x < l ; x++)
-	{
-		dest[x] = src[x];
-	}
-	dest[l] = '\0';
+	dest[i] = src[i];
 	return (dest);
+
 }

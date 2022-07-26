@@ -1,1 +1,1 @@
-I love to code in c
+Variadic functions

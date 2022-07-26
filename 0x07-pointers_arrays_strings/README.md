@@ -1,1 +1,1 @@
-i Love to code in C
+more pointers

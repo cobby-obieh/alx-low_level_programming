@@ -1,1 +1,1 @@
- i love to code in c
+static lib

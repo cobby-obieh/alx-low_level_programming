@@ -1,21 +1,28 @@
-#include<stdio.h>
 #include "main.h"
+#include "stdio.h"
+
 /**
- *print_array - update value.
- *@a: value to be evaluate.
- *@n: value to be evaluate.
- *Return: not.
+ * print_array - print reverse characters.
+ * @a: Array
+ * @n: Number of array
+ * Return: Always 0.
  */
 void print_array(int *a, int n)
 {
-	int x;
+	int i;
 
-	for (x = 0 ; x < n; x++)
+	if (n > 0)
 	{
-		printf("%d", a[x]);
-		if (x != n - 1)
+		for (i = 0 ; n > i; i++)
 		{
-			printf(", ");
+			if (i != n - 1)
+			{
+				printf("%d, ", a[i]);
+			}
+			else
+			{
+			       printf("%d", a[i]);
+			}
 		}
 	}
 	printf("\n");

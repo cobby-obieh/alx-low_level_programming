@@ -1,10 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - multiplies two positive numbers
- * @argc: n arguments
- * @argv: args
+ * @argc: number arguments
+ * @argv: array of arguments
+ *
  * Return: int
  */
 int main(int argc, char *argv[])
@@ -26,5 +28,5 @@ int main(int argc, char *argv[])
 		}
 		mul = atol(argv[1]) *  atol(argv[2]);
 		printf("%lu\n", mul);
-return (0);
+		return (0);
 }

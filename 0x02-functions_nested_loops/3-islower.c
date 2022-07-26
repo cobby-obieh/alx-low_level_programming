@@ -1,21 +1,18 @@
-/*
- * File: 3-islower.c
- * Nicholas M Mwanza
- */
-#include "holberton.h"
-
+#include "main.h"
 /**
- * _islower - Checks for lowercase character
- * @c: The character to be checked
+ * _islower - main function
  *
- * Return: 1 for lowercase character or 0 for anything else
+ * @c: character to compare
+ *
+ * Return: 1 if true, 0 if false
+ *
  */
+
 int _islower(int c)
 {
-	if (c >= 97 && c <= 122)
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
-
 	return (0);
 }
