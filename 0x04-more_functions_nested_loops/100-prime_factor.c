@@ -1,24 +1,30 @@
+/*
+ * File: 100-prime_factor.c
+ * Auth: Nicholas M Mwanza
+ */
 #include <stdio.h>
+#include <math.h>
 
 /**
- * main -  checks for checks for a digit (0 through 9).
+ * main - Prints the largest prime factor of the number 612852475143
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	long x, y;
+	long x, maxf;
+	long number = 612852475143;
+	double square = sqrt(number);
 
-	x = 612852475143;
-
-	for (y = 2; x > y; y++)
+	for (x = 1; x <= square; x++)
 	{
-		while (x % y == 0)
+		if (number % x == 0)
 		{
-			x = x / y;
+			maxf = number / x;
 		}
 	}
-	printf("%lu", y);
-	putchar('\n');
+
+	printf("%ld\n", maxf);
+
 	return (0);
 }

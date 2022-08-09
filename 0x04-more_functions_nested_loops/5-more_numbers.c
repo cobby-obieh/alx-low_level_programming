@@ -1,23 +1,31 @@
-#include "main.h"
+/*
+ * File: 5-more_numbers.c
+ *
+ * Auth: Nicholas M Mwanza
+ */
+#include "holberton.h"
 
 /**
- * more_numbers -  checks for checks for a digit (0 through 9).
- * Return: Always 0.
+ * more_numbers - Print 10 times the numbers since 0 up to 14
+ *
+ * Return: 10 times of the numbers since 0 up to 14
  */
 void more_numbers(void)
 {
-	int a, b;
+	int x, y;
 
-	for (a = 0; a < 10; a++)
+	for (x = 0; x < 10; x++)
 	{
-		for (b = 0; b < 15; b++)
+		for (y = 0; y <= 14; y++)
 		{
-			if (b / 10 != 0)
+			if (y > 9)
 			{
-				_putchar(b / 10 + '0');
+				_putchar((y / 10) + '0');
 			}
-			_putchar(b % 10 + '0');
+
+			_putchar((y % 10) + '0');
 		}
+
 		_putchar('\n');
 	}
 }

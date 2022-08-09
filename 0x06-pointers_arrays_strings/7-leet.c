@@ -1,27 +1,36 @@
-#include "main.h"
+/*
+ * Auth:Nicholas M Mwanza
+ */
+#include "holberton.h"
 
 /**
- * leet - Function that reverses the content of an array of integers.
+ * leet - Encodes a string into 1337
+ * @s: The string to encode
  *
- * @str: s is the array
- *
- * Return: Always 0.
+ * Return: The encoded string
  */
-char *leet(char *str)
+char *leet(char *s)
 {
-	int i = 0, k;
-	char s[] = "aAeEoOtTlL";
-	char s1[] = "4433007711";
+	int a = 0, b = 0, l = 5;
+	char r[5] = {'A', 'E', 'O', 'T', 'L'};
+	char n[5] = {'4', '3', '0', '7', '1'};
 
-	for (; str[i] != '\0'; i++)
+	while (s[a])
 	{
-		for (k = 0; k <= 9; k++)
+		b = 0;
+
+		while (b < l)
 		{
-			if (s[k] == str[i])
+			if (s[a] == r[b] || s[a] - 32 == r[b])
 			{
-				str[i] = s1[k];
+				s[a] = n[b];
 			}
+
+			b++;
 		}
+
+		a++;
 	}
-	return (str);
+
+	return (s);
 }

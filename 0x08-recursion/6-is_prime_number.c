@@ -1,32 +1,36 @@
-#include "main.h"
+#include "holberton.h"
+#include <stdio.h>
 
-int determine_prime_number(int n, int i);
+int check_prime(int n, int i);
 
 /**
- * is_prime_number - returns a prime number
- * @n: number to be checked
+ * is_prime_number - Returns if a number is prime
+ * @n: the number to be checked
  *
- * Return: prime value
+ * Return: integer value
  */
 int is_prime_number(int n)
 {
-	if (n <= 1)
-		return (0);
-	return (determine_prime_number(n, n - 1));
+	return (check_prime(n, 1));
 }
 
 /**
- * determine_prime_number - calculates if a number is prime recursively
- * @n: number to evaluate
- * @i: iterator
+ * check_prime - Check if number is prime
+ * @n: the number to be checked
+ * @i: the iteration times
  *
- * Return: 1 if n is prime, 0 if not
+ * Return: 1 for prime or 0 composite
  */
-int determine_prime_number(int n, int i)
+int check_prime(int n, int i)
 {
-	if (i == 1)
-		return (1);
-	if (n % i == 0 && i > 0)
+	if (n <= 1)
 		return (0);
-	return (determine_prime_number(n, i - 1));
+
+	if (n % i == 0 && i > 1)
+		return (0);
+
+	if ((n / i) < i)
+		return (1);
+
+	return (check_prime(n, i + 1));
 }

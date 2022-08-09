@@ -5,13 +5,13 @@ int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 
 /**
-  * new_dog - ...
-  * @name: ...
-  * @age: ...
-  * @owner: ...
-  *
-  * Return: ...
-  */
+ * new_dog - ...
+ * @name: ...
+ * @age: ...
+ * @owner: ...
+ *
+ * Return: ...
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *cutie_dog;
@@ -52,11 +52,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 }
 
 /**
-  * _strlen - Returns the length of a string
-  * @s: String to count
-  *
-  * Return: String length
-  */
+ * _strlen - Returns the length of a string
+ * @s: String to count
+ *
+ * Return: String length
+ */
 int _strlen(char *s)
 {
 	int c = 0;
@@ -70,12 +70,12 @@ int _strlen(char *s)
 }
 
 /**
-  * _strcpy - Copy a string
-  * @dest: Destination value
-  * @src: Source value
-  *
-  * Return: the pointer to dest
-  */
+ * _strcpy - Copy a string
+ * @dest: Destination value
+ * @src: Source value
+ *
+ * Return: the pointer to dest
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i;

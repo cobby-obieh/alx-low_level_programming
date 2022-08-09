@@ -1,10 +1,10 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * *_puts_recursion - prints a string followed by a newline
- * @s: string to be printed
+ * _puts_recursion - Print a string followed by a new line
+ * @s: the string to print
  *
- * Return: returns (0)
+ * Return: Nothing.
  */
 void _puts_recursion(char *s)
 {
@@ -13,7 +13,8 @@ void _puts_recursion(char *s)
 		_putchar('\n');
 		return;
 	}
-	_putchar(*s);
-	_puts_recursion(s + 1);
 
+	_putchar(*s);
+	s++;
+	_puts_recursion(s);
 }

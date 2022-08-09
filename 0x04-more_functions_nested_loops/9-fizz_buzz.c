@@ -1,8 +1,14 @@
+/*
+ * File: 9-fizz_buzz.c
+ * Aith: Nicholas M Mwanza
+ */
+#include "holberton.h"
 #include <stdio.h>
 
 /**
- * main -  checks for checks for a digit (0 through 9).
- * Return: Always 0.
+ * main - Prints a Fizz Buzz program
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -10,26 +16,30 @@ int main(void)
 
 	for (x = 1; x <= 100; x++)
 	{
-		if (x % 3 == 0 || x % 5 == 0)
+		if ((x % 3 == 0) && (x % 5 == 0))
 		{
-			if (x % 3 == 0)
-			{
-				printf("Fizz");
-			}
-			if (x % 5 == 0)
-			{
-				printf("Buzz");
-			}
+			printf("FizzBuzz");
+		}
+		else if (x % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (x % 5 == 0)
+		{
+			printf("Buzz");
 		}
 		else
 		{
 			printf("%d", x);
 		}
+
 		if (x != 100)
 		{
-		putchar(' ');
+			printf(" ");
 		}
 	}
-	putchar('\n');
+
+	printf("\n");
+
 	return (0);
 }

@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P /tmp https://github.com/McDevin619/alx-low_level_programming/raw/main/0x18-dynamic_libraries/nrandom.so
-export LD_PRELOAD=/tmp/nrandom.so
+wget -P .. https://raw.githubusercontent.com/Nicky-muindi/alx-school-low_level_programming/main/0x18-dynamic_libraries/libgiga.so
+export LD_PRELOAD="$PWD/../libgiga.so"

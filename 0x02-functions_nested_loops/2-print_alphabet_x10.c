@@ -1,21 +1,28 @@
-#include "main.h"
+/*
+ * File: 2-print_alphabet_x10.c
+ * Auth: Nicholas M Mwanza
+ */
+#include "holberton.h"
+
 /**
- * print_alphabet_x10 - prints alphabet 10 times
+ * print_alphabet_x10 - Make alphabet x10 times
  *
- * Return: always 0;
- *
+ * Return: void
  */
 void print_alphabet_x10(void)
 {
-	char i;
-	char h;
+	char c;
+	int i = 0;
 
-	for (h = 0; h <= 9; h++)
+	while (i <= 9)
 	{
-		for (i = 'a'; i <= 'z'; i++)
+		for (c = 'a'; c <= 'z'; c++)
 		{
-			_putchar(i);
+			_putchar(c);
 		}
+
 		_putchar('\n');
+
+		i++;
 	}
 }

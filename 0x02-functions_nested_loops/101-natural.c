@@ -1,22 +1,28 @@
+/*
+ * File: 101-natural.c
+ * Auth: Nicholas M Mwanza
+ */
 #include <stdio.h>
+
 /**
- * main - main function
+ * main - Prints the sum of all multiples of 3 or 5 up to 1024
  *
- * Return: always 0
+ * Return: Always success
  */
 int main(void)
 {
-	int a;
-	int b = 0;
+	int i, z = 0;
 
-	for (a = 0; a < 1024; a++)
+	while (i < 1024)
 	{
-		if (a % 3 == 0 || a % 5 == 0)
+		if ((i % 3 == 0) || (i % 5 == 0))
 		{
-			b += a;
+			z += i;
 		}
 
+		i++;
 	}
-	printf("%d\n", b);
+
+	printf("%d\n", z);
 	return (0);
 }

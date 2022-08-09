@@ -1,12 +1,17 @@
-#include "main.h"
-/**
- * add - adding it up
- * @a: first integer
- * @b: second integer
- *
- * Return: sum of both integers
+/*
+ * File: 10-add.c
+ * Auth: Nicholas M Mwanza
  */
-int add(int a, int b)
+#include "holberton.h"
+
+/**
+ * add - Adds two values
+ * @n1: The first number to be computed
+ * @n2: The second number to be computed
+ *
+ * Return: Integer value
+ */
+int add(int n1, int n2)
 {
-	return (a + b);
+	return (n1 + n2);
 }

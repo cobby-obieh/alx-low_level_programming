@@ -1,21 +1,29 @@
-#include "main.h"
+#include "holberton.h"
+#include <stdio.h>
 
 /**
- * reverse_array - Function that reverses the content of an array of integers.
+ * reverse_array - Reverses the content of an array of integers
+ * @a: An array of integers
+ * @n: Number of elements to swap
  *
- * @a: a is the array
- * @n: Where n is the number of elements of the array
- * Return: Always 0.
+ * Return: empty
  */
 void reverse_array(int *a, int n)
 {
-	int i = 0, Aux;
+	int *p, i, aux, k;
 
-	n = n - 1;
-	while (i <= n)
+	p = a;
+
+	for (i = 1; i < n; i++)
 	{
-		Aux = a[i];
-		a[i++] = a[n];
-		a[n--] = Aux;
+		p++;
+	}
+
+	for (k = 0; k < i / 2; k++)
+	{
+		aux = a[k];
+		a[k] = *p;
+		*p = aux;
+		p--;
 	}
 }

@@ -1,34 +1,39 @@
-#include "main.h"
+/*
+ * File: 10-print_triangle.c
+ * Auth: Nicholas M Mwanza
+ *
+ */
+#include "holberton.h"
 
 /**
- * print_triangle -  checks for checks for a digit (0 through 9).
- * @size: size -  Variable
- * Return: Always 0.
+ * print_triangle - Prints a triangle of squares according parameter
+ * @size: The size of the squares triangle
+ *
+ * Return: empty
  */
 void print_triangle(int size)
 {
-	int x, y;
+	int x, y, z;
 
-	if (size > 0)
+	if (size <= 0)
 	{
-		for (x = 1; x <= size; x++)
-		{
-			for (y = 1; y <= size; y++)
-			{
-				if (y <= size - x)
-				{
-					_putchar(' ');
-				}
-				else
-				{
-					_putchar('#');
-				}
-			}
-			_putchar('\n');
-		}
+		_putchar('\n');
 	}
 	else
 	{
-		_putchar('\n');
+		for (x = 0; x < size; x++)
+		{
+			for (y = size - x; y > 1; y--)
+			{
+				_putchar(32);
+			}
+
+			for (z = 0; z <= x; z++)
+			{
+				_putchar(35);
+			}
+
+			_putchar('\n');
+		}
 	}
 }

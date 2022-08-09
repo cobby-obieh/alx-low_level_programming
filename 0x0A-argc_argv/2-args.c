@@ -1,12 +1,12 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdio.h>
 
 /**
- * main - prints all arguments it receives.
- * @argc: The number of command line arguments
- * @argv: An array containing the program command line arguments
+ * main - Prints all the args content
+ * @argc: argument count
+ * @argv: argument vector
  *
- * Return: always (0)
+ * Return: Always zero
  */
 int main(int argc, char *argv[])
 {
@@ -16,5 +16,6 @@ int main(int argc, char *argv[])
 	{
 		printf("%s\n", argv[i]);
 	}
+
 	return (0);
 }

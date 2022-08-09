@@ -1,23 +1,24 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * string_toupper - Function that reverses the content of an array of integers.
+ * string_toupper - Changes all lowercase letters to uppercase
+ * @p: The string will be modified
  *
- * @s: s is the array
- *
- * Return: Always 0.
+ * Return: char var
  */
-char *string_toupper(char *s)
+char *string_toupper(char *p)
 {
-	int i = 0;
+	int a = 0;
 
-	while (s[i] != '\0')
+	while (p[a])
 	{
-		if ((s[i] >= 97) && (s[i] <= 122))
+		if (p[a] >= 97 && p[a] <= 122)
 		{
-			s[i] = s[i] - 32;
+			p[a] -= 32;
 		}
-	i++;
+
+		a++;
 	}
-	return (s);
+
+	return (p);
 }
